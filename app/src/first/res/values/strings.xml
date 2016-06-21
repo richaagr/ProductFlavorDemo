@@ -1,0 +1,5 @@
+<resources>
+    <string name="flavor_text">Flavor first Text</string>
+    <string name="first_button">First App Button</string>
+    <string name="second_button">Second</string>
+</resources>
