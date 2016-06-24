@@ -11,4 +11,14 @@
     <string name="first_button">First</string>
     <string name="second_button">Second</string>
     <string name="demo_app">Demo App</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="version">Version</string>
+    <string name="version_number">1.0</string>
+    <string name="chose_url">Chose URL</string>
+    <string-array name="urls">
+        <item>www.app.com</item>
+        <item>www.app-qat.com</item>
+        <item>www.app-dev.com</item>
+    </string-array>
 </resources>

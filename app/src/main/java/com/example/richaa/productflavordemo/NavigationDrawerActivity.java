@@ -47,12 +47,12 @@ public class NavigationDrawerActivity extends AppCompatActivity
     // Handle navigation view item clicks here.
     int id = item.getItemId();
 
+    FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
     if (id == R.id.flavor) {
-      FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
       fragmentTransaction.replace(R.id.container,new FlavorFragment()).commit();
     } else if (id == R.id.build_type) {
+      fragmentTransaction.replace(R.id.container,new BuildTypesFragment()).commit();
     }
-
     DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
     drawer.closeDrawer(GravityCompat.START);
     return true;
