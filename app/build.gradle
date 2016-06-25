@@ -2,6 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     signingConfigs {
+
         releaseconfig {
             keyAlias 'myandroidkey'
             keyPassword 'twdemopass'
@@ -27,8 +28,15 @@ android {
         debug {}
     }
     productFlavors {
-        first { applicationId "com.example.richaa.first" }
-        second { applicationId "com.example.richaa.second" }
+        first {
+            applicationId "com.example.richaa.first"
+            versionName '1.0-first'
+
+        }
+        second {
+            applicationId "com.example.richaa.second"
+            versionName '1.0-second'
+        }
     }
 }
 
