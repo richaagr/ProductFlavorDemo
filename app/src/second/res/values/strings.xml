@@ -1,4 +1,5 @@
 <resources>
+    <string name="app_name">Second Flavor</string>
     <string name="flavor_text">Flavor second Text</string>
     <string name="first_button">Second App Button</string>
     <string name="second_button">Second</string>

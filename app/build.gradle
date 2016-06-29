@@ -31,7 +31,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.releaseconfig
         }
-        debug {}
+        debug {
+            applicationIdSuffix "debug"
+        }
     }
     productFlavors {
         first {
