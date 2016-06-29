@@ -9,11 +9,17 @@ android {
             storeFile file('/Users/Harsh/Desktop/DemoKeyStore.jks')
             storePassword 'twdemo'
         }
+        customconfig{
+            keyAlias 'secondKey'
+            keyPassword 'secondPass'
+            storeFile file('/Users/Harsh/Desktop/DemoKeyStore.jks')
+            storePassword 'twdemoagain'
+        }
     }
     compileSdkVersion 23
     buildToolsVersion "23.0.3"
     defaultConfig {
-        applicationId "com.example.richaa.productflavordemo"
+        applicationId "com.thoughtworks.demo"
         minSdkVersion 19
         targetSdkVersion 23
         versionCode 1
@@ -29,12 +35,12 @@ android {
     }
     productFlavors {
         first {
-            applicationId "com.example.richaa.first"
+            applicationId "com.thoughtworks.demo.first"
             versionName '1.0-first'
 
         }
         second {
-            applicationId "com.example.richaa.second"
+            applicationId "com.thoughtworks.demo.second"
             versionName '1.0-second'
         }
     }
